@@ -1,6 +1,7 @@
 <script setup>
 import Calculator from './Calculator.vue'
 import WordCollector from './WordCollector.vue'
+import ColorPicker from './ColorPicker.vue'
 </script>
 
 <template>
@@ -106,9 +107,13 @@ import WordCollector from './WordCollector.vue'
             <h5 class="myLinks" @click="showAllFunc"><u>This is HTML + Vue + JS</u></h5>
             <div v-if="showAll">
                 <h5>Word Collector</h5>
-                <WordCollector/>
+                <WordCollector/><br>
+
                 <h5>Calculator</h5>
-                <Calculator/>
+                <Calculator/><br><br>
+
+                <h5>ColorPicker</h5>
+                <ColorPicker/>
             </div>
         </section>
     </div>
