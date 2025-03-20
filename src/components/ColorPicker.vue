@@ -30,8 +30,9 @@ export default{
         changeColor(){
             var bgcolor = document.getElementById("bgcolor")
             var textcolor = document.getElementById("textcolor")
+
             bgcolor.style.backgroundColor = `rgb(${this.red},${this.green},${this.blue})`
-            textcolor.style.color = `rgb(${-this.red},${-this.green},${-this.blue})`
+            textcolor.style.color = `rgb(${255 - this.red},${255 - this.green},${255 - this.blue})`
         }
     },
 }
